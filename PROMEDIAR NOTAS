@@ -1,0 +1,38 @@
+declare @nota1 as int;
+declare @nota2 as int;
+declare @nota3 as int;
+declare @nota4 as int;
+declare @nota5 as int;
+declare @nota6 as int;
+declare @nota7 as int;
+declare @nota8 as int;
+declare @nota9 as int;
+declare @nota10 as int;
+declare @notafinal as int;
+declare @promedio as int;
+
+
+
+set @nota1 =12;
+set @nota2 =18;
+set @nota3 =18;
+set @nota4 =17;
+set @nota5 =16;
+set @nota6 =14;
+set @nota7 =18;
+set @nota8 =18;
+set @nota9 =17;
+set @nota10 =15;
+set @notafinal=(@nota1+@nota2+@nota3+@nota4+@nota5+@nota6+@nota7+@nota8+@nota9+@nota10)/10;
+
+
+if @promedio >=14
+begin 
+print 'desaprobado'
+end 
+else
+begin
+print 'aprobado'
+end 
+
+print @notafinal;
